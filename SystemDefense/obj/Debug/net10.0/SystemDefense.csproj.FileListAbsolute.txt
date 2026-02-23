@@ -1,0 +1,15 @@
+/home/umutcan/Work/SystemDefence-.Net/SystemDefense/bin/Debug/net10.0/SystemDefense
+/home/umutcan/Work/SystemDefence-.Net/SystemDefense/bin/Debug/net10.0/SystemDefense.deps.json
+/home/umutcan/Work/SystemDefence-.Net/SystemDefense/bin/Debug/net10.0/SystemDefense.runtimeconfig.json
+/home/umutcan/Work/SystemDefence-.Net/SystemDefense/bin/Debug/net10.0/SystemDefense.dll
+/home/umutcan/Work/SystemDefence-.Net/SystemDefense/bin/Debug/net10.0/SystemDefense.pdb
+/home/umutcan/Work/SystemDefence-.Net/SystemDefense/obj/Debug/net10.0/SystemDefense.GeneratedMSBuildEditorConfig.editorconfig
+/home/umutcan/Work/SystemDefence-.Net/SystemDefense/obj/Debug/net10.0/SystemDefense.AssemblyInfoInputs.cache
+/home/umutcan/Work/SystemDefence-.Net/SystemDefense/obj/Debug/net10.0/SystemDefense.AssemblyInfo.cs
+/home/umutcan/Work/SystemDefence-.Net/SystemDefense/obj/Debug/net10.0/SystemDefense.csproj.CoreCompileInputs.cache
+/home/umutcan/Work/SystemDefence-.Net/SystemDefense/obj/Debug/net10.0/SystemDefense.sourcelink.json
+/home/umutcan/Work/SystemDefence-.Net/SystemDefense/obj/Debug/net10.0/SystemDefense.dll
+/home/umutcan/Work/SystemDefence-.Net/SystemDefense/obj/Debug/net10.0/refint/SystemDefense.dll
+/home/umutcan/Work/SystemDefence-.Net/SystemDefense/obj/Debug/net10.0/SystemDefense.pdb
+/home/umutcan/Work/SystemDefence-.Net/SystemDefense/obj/Debug/net10.0/SystemDefense.genruntimeconfig.cache
+/home/umutcan/Work/SystemDefence-.Net/SystemDefense/obj/Debug/net10.0/ref/SystemDefense.dll
