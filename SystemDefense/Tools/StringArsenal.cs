@@ -2,9 +2,6 @@ namespace Tools;
 
 public class StringArsenal
 {
-
-
-
     public string FindExtension(string str)
     {
         // First find the lastvalue on the string array with lastIndexOf functions
@@ -17,7 +14,7 @@ public class StringArsenal
 
         int index = str.LastIndexOf(".");
 
-        if (index == -1)
+        if (index == -1 || index == 0)
         {
             return "";
         }

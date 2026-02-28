@@ -3,38 +3,37 @@ namespace Tests;
 
 public static class StringTester
 {
-    public static void RunTestFindExtension()
+    public static bool RunTestFindExtension()
     {
 
-        string[] testPaths = {
-        "/var/log/syslog/connection_backup.log",
-        "/home/user/projects/website/assets/img/header_v2.png",
-        "/etc/nginx/conf.d/default.conf",
-        "/tmp/.hidden_99/cache_data/temp_file_458.tmp_data",
-        "/mnt/storage/asdfghjkl_123/xyz_abc/archive.tar_old",
-        "test.txt",
-        "just_a_file",
-        ".gitignore"      };
+        var testCases = new Dictionary<string, string> {
+          {"/var/log/syslog/connection_backup.log",".log"},
+          {"/home/user/projects/website/assets/img/header_v2.png",".png"},
+          {"/etc/nginx/conf.d/default.conf",".conf"},
+            {"/tmp/.hidden_99/cache_data/temp_file_458.tmp_data",".tmp_data"},
+              {"/mnt/storage/asdfghjkl_123/xyz_abc/archive.tar_old",".tar_old"},
+                {"test.txt",".txt"},
+                  {"just_a_file",""},
+                    {".gitignore",""}      };
 
         var tools = new Tools.StringArsenal();
+        bool isSuccess = true;
 
-        foreach (string path in testPaths)
+        foreach (var testCase in testCases)
         {
-            string result = tools.FindExtension(path);
+            string result = tools.FindExtension(testCase.Key);
 
-            if (!result.Contains("."))
+            if (result != testCase.Value)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("TEST FAIL !");
                 Console.WriteLine($"Error in : {result}");
                 Console.ResetColor();
 
-                Environment.Exit(1);
+                isSuccess = false;
             }
         }
-        Console.ForegroundColor = ConsoleColor.Blue;
-        Console.WriteLine("ALL TEST PASS...");
-        Console.ResetColor();
+        return isSuccess;
     }
 }
 

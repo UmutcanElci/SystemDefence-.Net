@@ -8,4 +8,4 @@ clean:
 	dotnet clean SystemDefense.slnx
 
 test:
-	dotnet run --project Tests/Tests.csproj
+	dotnet run --project MainApp/SystemDefense.csproj -- test
