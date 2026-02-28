@@ -10,3 +10,7 @@
 /home/umutcan/Work/SystemDefence-.Net/SystemDefense/Tests/obj/Debug/net10.0/refint/Tests.dll
 /home/umutcan/Work/SystemDefence-.Net/SystemDefense/Tests/obj/Debug/net10.0/Tests.pdb
 /home/umutcan/Work/SystemDefence-.Net/SystemDefense/Tests/obj/Debug/net10.0/ref/Tests.dll
+/home/umutcan/Work/SystemDefence-.Net/SystemDefense/Tests/bin/Debug/net10.0/Tools.dll
+/home/umutcan/Work/SystemDefence-.Net/SystemDefense/Tests/bin/Debug/net10.0/Tools.pdb
+/home/umutcan/Work/SystemDefence-.Net/SystemDefense/Tests/obj/Debug/net10.0/Tests.csproj.AssemblyReference.cache
+/home/umutcan/Work/SystemDefence-.Net/SystemDefense/Tests/obj/Debug/net10.0/Tests.csproj.Up2Date

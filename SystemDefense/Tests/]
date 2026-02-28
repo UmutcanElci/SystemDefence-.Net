@@ -1,0 +1,19 @@
+namespace Tests;
+
+
+public static class StringTester
+{
+    public static void RunTestFindExtension()
+    {
+
+        string testStr1 = "/var/log/syslog/connection_backup.log";
+        string testStr2 = "/home/user/projects/website/assets/img/header_v2.png";
+        string testStr3 = "/etc/nginx/conf.d/default.conf";
+        string testStr4 = "/tmp/.hidden_99/cache_data/temp_file_458.tmp_data";
+        string testStr5 = "/mnt/storage/asdfghjkl_123/xyz_abc/archive.tar_old";
+        string testStr6 = "test.txt";
+    }
+}
+
+
+
