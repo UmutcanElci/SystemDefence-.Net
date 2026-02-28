@@ -7,10 +7,10 @@ Console.WriteLine("Hello, World!");
 
 var str = new StringArsenal();
 
-List<string> list = new List<string>();
+string value = "file/new_file/a.txt";
 
+string result1 = str.FindExtension(value);
+Console.WriteLine("extension : " + result1);
 
-list.Add("file/new_file/a.txt");
-
-str.FindExtension(list);
-
+string result2 = str.FindFileName(value);
+Console.WriteLine("file name : " + result2);
