@@ -1,2 +1,10 @@
 <Solution>
+  <Folder Name="/MainApp/">
+    <Project Path="MainApp/SystemDefense.csproj" />
+  </Folder>
+  <Project Path="Database/Database.csproj" />
+  <Project Path="Events/Events.csproj" />
+  <Project Path="Interfaces/Interfaces.csproj" />
+  <Project Path="Tests/Tests.csproj" />
+  <Project Path="Tools/Tools.csproj" />
 </Solution>

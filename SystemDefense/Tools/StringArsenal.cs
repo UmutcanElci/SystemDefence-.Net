@@ -49,6 +49,7 @@ public class StringArsenal
 
     public string CleanFormat(List<string> list)
     {
+
         return "";
     }
 
