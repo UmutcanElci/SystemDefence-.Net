@@ -14,3 +14,6 @@ Console.WriteLine("extension : " + result1);
 
 string result2 = str.FindFileName(value);
 Console.WriteLine("file name : " + result2);
+
+string result3 = str.CleanFormat("aDam", "a file content.ff");
+Console.WriteLine(result3);

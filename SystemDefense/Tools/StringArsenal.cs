@@ -47,10 +47,25 @@ public class StringArsenal
         return str.Substring(lastForwardSlash + 1);
     }
 
-    public string CleanFormat(List<string> list)
+    public string CleanFormat(string user, string content)
     {
+        if (string.IsNullOrEmpty(user) || string.IsNullOrEmpty(content))
+        {
+            return "";
+        }
 
-        return "";
+        if (content.All(Char.IsDigit))
+        {
+            return "Secure Content...";
+            // Need a more complex way to format it
+        }
+        user = user.Trim().ToLower();
+        content = content.Trim().ToLower().Replace(" ", "-");
+
+        string datestr = DateTime.Now.ToString("dd.MM.yyyy");
+
+
+        return $"-->[{datestr}] {user} {content}";
     }
 
 }
