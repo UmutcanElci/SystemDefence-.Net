@@ -68,4 +68,23 @@ public class StringArsenal
         return $"-->[{datestr}] {user} {content}";
     }
 
+    public string SafeFileCreate(string str)
+    {
+        if (string.IsNullOrEmpty(str))
+        {
+            return "";
+        }
+
+        try
+        {
+            str = FindExtension(str);
+            str = str.ToLower().Trim();
+            return str.Replace(" ", "");
+        }
+        catch (ArgumentException)
+        {
+            return "";
+        }
+    }
+
 }

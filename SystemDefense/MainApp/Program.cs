@@ -17,3 +17,6 @@ Console.WriteLine("file name : " + result2);
 
 string result3 = str.CleanFormat("aDam", "a file content.ff");
 Console.WriteLine(result3);
+
+string result4 = str.SafeFileCreate("NNN EW file way to cc .   txt");
+Console.WriteLine(result4);
