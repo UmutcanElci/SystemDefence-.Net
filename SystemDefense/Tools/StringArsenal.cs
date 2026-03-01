@@ -1,3 +1,5 @@
+using System.Text;
+
 namespace Tools;
 
 public class StringArsenal
@@ -82,6 +84,25 @@ public class StringArsenal
         {
             return "";
         }
+    }
+
+    public string CombineLogs(List<string> list)
+    {
+
+        if (list == null || list.Count == 0)
+        {
+            return "";
+        }
+
+        StringBuilder str_build = new StringBuilder();
+
+        foreach (string str in list)
+        {
+            str_build.Append(str);
+        }
+
+        return str_build.ToString();
+
     }
 
 }
