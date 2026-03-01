@@ -3,6 +3,8 @@
 using Tests;
 
 
+
+
 if (args.Length > 0 && args[0] == "test")
 {
     Tests.GeneralTest.RunAll();

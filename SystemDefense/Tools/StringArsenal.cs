@@ -1,4 +1,5 @@
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace Tools;
 
@@ -103,6 +104,18 @@ public class StringArsenal
 
         return str_build.ToString();
 
+    }
+
+    public string IdMasking(string id)
+    {
+
+        if (string.IsNullOrEmpty(id) || id.Length < 12)
+        {
+            return id;
+        }
+
+        string pattern = @"\d{8}(\d{4})";
+        return Regex.Replace(id, pattern, "********$1");
     }
 
 }
