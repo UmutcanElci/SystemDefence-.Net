@@ -12,6 +12,8 @@ public static class GeneralTest
 
         if (!StringTester.RunTestFindExtension()) { allPassed = false; }
 
+        if (!StringTester.RunTesFindFileName()) { allPassed = false; }
+
         if (allPassed)
         {
             Console.ForegroundColor = ConsoleColor.Green;
