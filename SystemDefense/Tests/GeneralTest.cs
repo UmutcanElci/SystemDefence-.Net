@@ -14,10 +14,13 @@ public static class GeneralTest
 
         if (!StringTester.RunTesFindFileName()) { allPassed = false; }
 
+        if (!StringTester.RunTestCleanFormat()) { allPassed = false; }
+
+        if (!StringTester.RunTestSafeFileCreate()) { allPassed = false; }
         if (allPassed)
         {
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("-- ALL TESTS PASS SUCCESFULLY --");
+            Console.WriteLine("\n-- ALL TESTS PASS SUCCESFULLY --");
             Console.ResetColor();
             Environment.Exit(0);
         }
