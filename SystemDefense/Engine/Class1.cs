@@ -1,4 +1,4 @@
-﻿namespace Interfaces;
+﻿namespace Engine;
 
 public class Class1
 {

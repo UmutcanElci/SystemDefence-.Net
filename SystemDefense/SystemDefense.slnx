@@ -3,6 +3,7 @@
     <Project Path="MainApp/SystemDefense.csproj" />
   </Folder>
   <Project Path="Database/Database.csproj" />
+  <Project Path="Engine/Engine.csproj" />
   <Project Path="Events/Events.csproj" />
   <Project Path="Interfaces/Interfaces.csproj" />
   <Project Path="Tests/Tests.csproj" />
