@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "Events/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Interfaces": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Events.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Events.dll": {}
+        }
+      },
+      "Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Interfaces.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Events/1.0.0": {
+      "type": "project",
+      "path": "../Events/Events.csproj",
+      "msbuildProject": "../Events/Events.csproj"
+    },
+    "Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../Interfaces/Interfaces.csproj",
+      "msbuildProject": "../Interfaces/Interfaces.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "Events >= 1.0.0",
+      "Interfaces >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/home/umutcan/.nuget/packages/": {}
@@ -31,7 +69,14 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/umutcan/Work/SystemDefence-.Net/SystemDefense/Events/Events.csproj": {
+              "projectPath": "/home/umutcan/Work/SystemDefence-.Net/SystemDefense/Events/Events.csproj"
+            },
+            "/home/umutcan/Work/SystemDefence-.Net/SystemDefense/Interfaces/Interfaces.csproj": {
+              "projectPath": "/home/umutcan/Work/SystemDefence-.Net/SystemDefense/Interfaces/Interfaces.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

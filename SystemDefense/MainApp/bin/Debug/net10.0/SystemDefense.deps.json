@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v10.0": {
       "SystemDefense/1.0.0": {
         "dependencies": {
+          "Core": "1.0.0",
           "Database": "1.0.0",
           "Events": "1.0.0",
           "Interfaces": "1.0.0",
@@ -16,6 +17,18 @@
         },
         "runtime": {
           "SystemDefense.dll": {}
+        }
+      },
+      "Core/1.0.0": {
+        "dependencies": {
+          "Events": "1.0.0",
+          "Interfaces": "1.0.0"
+        },
+        "runtime": {
+          "Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Database/1.0.0": {
@@ -68,6 +81,11 @@
   },
   "libraries": {
     "SystemDefense/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -25,3 +25,5 @@
 /home/umutcan/Work/SystemDefence-.Net/SystemDefense/MainApp/obj/Debug/net10.0/SystemDefense.pdb
 /home/umutcan/Work/SystemDefence-.Net/SystemDefense/MainApp/obj/Debug/net10.0/SystemDefense.genruntimeconfig.cache
 /home/umutcan/Work/SystemDefence-.Net/SystemDefense/MainApp/obj/Debug/net10.0/ref/SystemDefense.dll
+/home/umutcan/Work/SystemDefence-.Net/SystemDefense/MainApp/bin/Debug/net10.0/Core.dll
+/home/umutcan/Work/SystemDefence-.Net/SystemDefense/MainApp/bin/Debug/net10.0/Core.pdb

@@ -1,11 +1,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using Tests;
-using Events;
+using Core;
 
-var a = new DataLeakEvent();
 
-await a.ExecuteAsync();
+var a = new SimulationManager();
+
+await a.StartSimulation();
+
 
 if (args.Length > 0 && args[0] == "test")
 {
