@@ -10,3 +10,7 @@
 /home/umutcan/Work/SystemDefence-.Net/SystemDefense/Events/obj/Debug/net10.0/refint/Events.dll
 /home/umutcan/Work/SystemDefence-.Net/SystemDefense/Events/obj/Debug/net10.0/Events.pdb
 /home/umutcan/Work/SystemDefence-.Net/SystemDefense/Events/obj/Debug/net10.0/ref/Events.dll
+/home/umutcan/Work/SystemDefence-.Net/SystemDefense/Events/bin/Debug/net10.0/Interfaces.dll
+/home/umutcan/Work/SystemDefence-.Net/SystemDefense/Events/bin/Debug/net10.0/Interfaces.pdb
+/home/umutcan/Work/SystemDefence-.Net/SystemDefense/Events/obj/Debug/net10.0/Events.csproj.AssemblyReference.cache
+/home/umutcan/Work/SystemDefence-.Net/SystemDefense/Events/obj/Debug/net10.0/Events.csproj.Up2Date
