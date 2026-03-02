@@ -99,7 +99,7 @@ public class StringArsenal
 
         foreach (string str in list)
         {
-            str_build.Append(str);
+            str_build.AppendLine(str);
         }
 
         return str_build.ToString();
@@ -109,7 +109,7 @@ public class StringArsenal
     public string IdMasking(string id)
     {
 
-        if (string.IsNullOrEmpty(id) || id.Length < 12)
+        if (string.IsNullOrEmpty(id) || id.Length != 12)
         {
             return id;
         }

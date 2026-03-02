@@ -17,6 +17,15 @@ public static class GeneralTest
         if (!StringTester.RunTestCleanFormat()) { allPassed = false; }
 
         if (!StringTester.RunTestSafeFileCreate()) { allPassed = false; }
+
+        if (!StringTester.RunTestCombineLogs()) { allPassed = false; }
+
+        if (!StringTester.RunTestIdMasking()) { allPassed = false; }
+
+        if (!StringTester.RunTestCharacterCount()) { allPassed = false; }
+
+        if (!StringTester.RunTestFileVersionControl()) { allPassed = false; }
+
         if (allPassed)
         {
             Console.ForegroundColor = ConsoleColor.Green;
