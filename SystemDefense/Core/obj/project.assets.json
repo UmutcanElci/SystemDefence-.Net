@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/umutcan/Work/SystemDefence-.Net/SystemDefense/Engine/Engine.csproj",
-      "projectName": "Engine",
-      "projectPath": "/home/umutcan/Work/SystemDefence-.Net/SystemDefense/Engine/Engine.csproj",
+      "projectUniqueName": "/home/umutcan/Work/SystemDefence-.Net/SystemDefense/Core/Core.csproj",
+      "projectName": "Core",
+      "projectPath": "/home/umutcan/Work/SystemDefence-.Net/SystemDefense/Core/Core.csproj",
       "packagesPath": "/home/umutcan/.nuget/packages/",
-      "outputPath": "/home/umutcan/Work/SystemDefence-.Net/SystemDefense/Engine/obj/",
+      "outputPath": "/home/umutcan/Work/SystemDefence-.Net/SystemDefense/Core/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/umutcan/.nuget/NuGet/NuGet.Config"
