@@ -118,4 +118,29 @@ public class StringArsenal
         return Regex.Replace(id, pattern, "********$1");
     }
 
+    public string CharacterCount(string str, char ch)
+    {
+
+        if (string.IsNullOrEmpty(str) || ch == '\0')
+        {
+            return "";
+        }
+
+        int count = str.Count(c => char.ToLower(c) == char.ToLower(ch));
+
+
+        if (count == 0)
+        {
+            return $"There is no '{ch}' character in this string!";
+        }
+
+        return $"There is {count} '{ch}' characters in the string.";
+    }
+
+    public int FileVersionControl(string str)
+    {
+
+        return 0;
+    }
+
 }
