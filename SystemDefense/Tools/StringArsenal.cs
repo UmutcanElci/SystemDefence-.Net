@@ -140,7 +140,32 @@ public class StringArsenal
     public int FileVersionControl(string str)
     {
 
-        return 0;
+        if (string.IsNullOrEmpty(str))
+        {
+            return -1;
+        }
+
+        int index = str.LastIndexOf(".");
+        if (!str.Contains("_v") || index == -1 || index == 0)
+        {
+            return -1;
+        }
+
+        int startIndex = str.LastIndexOf("_v") + 2;
+
+        string numberValue = str[startIndex..index];
+
+
+        if (int.TryParse(numberValue, out int num))
+        {
+            return num;
+        }
+        else
+        {
+            Console.WriteLine($"Attempted fail: '{numberValue}' is not a valid number.");
+            return -1;
+        }
+
     }
 
 }
