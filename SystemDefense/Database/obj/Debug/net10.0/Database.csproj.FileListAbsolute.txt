@@ -10,3 +10,4 @@
 /home/umutcan/Work/SystemDefence-.Net/SystemDefense/Database/obj/Debug/net10.0/refint/Database.dll
 /home/umutcan/Work/SystemDefence-.Net/SystemDefense/Database/obj/Debug/net10.0/Database.pdb
 /home/umutcan/Work/SystemDefence-.Net/SystemDefense/Database/obj/Debug/net10.0/ref/Database.dll
+/home/umutcan/Work/SystemDefence-.Net/SystemDefense/Database/obj/Debug/net10.0/Database.csproj.AssemblyReference.cache

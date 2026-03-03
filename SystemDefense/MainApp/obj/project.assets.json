@@ -176,6 +176,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "Database": "1.0.0",
           "Events": "1.0.0",
           "Interfaces": "1.0.0"
         },
@@ -189,6 +190,9 @@
       "Database/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.Data.Sqlite": "10.0.3"
+        },
         "compile": {
           "bin/placeholder/Database.dll": {}
         },
@@ -407,7 +411,6 @@
       "Database >= 1.0.0",
       "Events >= 1.0.0",
       "Interfaces >= 1.0.0",
-      "Microsoft.Data.Sqlite >= 10.0.3",
       "Tests >= 1.0.0",
       "Tools >= 1.0.0"
     ]
@@ -473,12 +476,6 @@
     "frameworks": {
       "net10.0": {
         "targetAlias": "net10.0",
-        "dependencies": {
-          "Microsoft.Data.Sqlite": {
-            "target": "Package",
-            "version": "[10.0.3, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",

@@ -3,6 +3,7 @@
   <ItemGroup>
     <ProjectReference Include="../Interfaces/Interfaces.csproj"/>
     <ProjectReference Include="../Events/Events.csproj"/>
+    <ProjectReference Include="../Database/Database.csproj"/>
   </ItemGroup>
 
   <PropertyGroup>

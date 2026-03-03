@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "edDf+YrKanw=",
+  "dgSpecHash": "qLHEO0KKsF0=",
   "success": true,
   "projectFilePath": "/home/umutcan/Work/SystemDefence-.Net/SystemDefense/Core/Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/umutcan/.nuget/packages/microsoft.data.sqlite/10.0.3/microsoft.data.sqlite.10.0.3.nupkg.sha512",
+    "/home/umutcan/.nuget/packages/microsoft.data.sqlite.core/10.0.3/microsoft.data.sqlite.core.10.0.3.nupkg.sha512",
+    "/home/umutcan/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.1.11/sqlitepclraw.bundle_e_sqlite3.2.1.11.nupkg.sha512",
+    "/home/umutcan/.nuget/packages/sqlitepclraw.core/2.1.11/sqlitepclraw.core.2.1.11.nupkg.sha512",
+    "/home/umutcan/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.1.11/sqlitepclraw.lib.e_sqlite3.2.1.11.nupkg.sha512",
+    "/home/umutcan/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.11/sqlitepclraw.provider.e_sqlite3.2.1.11.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,6 +1,7 @@
 namespace Core;
 
 using Interfaces;
+using Database;
 
 public class SimulationManager
 {
@@ -11,6 +12,9 @@ public class SimulationManager
     {
         AllEvents = new List<ISimulationEvents>();
         menu = new Menu();
+
+        var db = new Database.DbManager();
+        db.InitializeDatabase();
 
         AllEvents.Add(new Events.DataLeakEvent());
     }

@@ -26,6 +26,9 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
+              "/home/umutcan/Work/SystemDefence-.Net/SystemDefense/Database/Database.csproj": {
+                "projectPath": "/home/umutcan/Work/SystemDefence-.Net/SystemDefense/Database/Database.csproj"
+              },
               "/home/umutcan/Work/SystemDefence-.Net/SystemDefense/Events/Events.csproj": {
                 "projectPath": "/home/umutcan/Work/SystemDefence-.Net/SystemDefense/Events/Events.csproj"
               },
@@ -383,6 +386,12 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
+          "dependencies": {
+            "Microsoft.Data.Sqlite": {
+              "target": "Package",
+              "version": "[10.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -1405,12 +1414,6 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "dependencies": {
-            "Microsoft.Data.Sqlite": {
-              "target": "Package",
-              "version": "[10.0.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
