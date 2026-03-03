@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using Database;
 
 namespace Core;
@@ -6,7 +7,7 @@ namespace Core;
 public class Menu
 {
 
-    public void ShowOptions()
+    public async Task<int> ShowOptions()
     {
         Console.ForegroundColor = ConsoleColor.Magenta;
         Console.WriteLine("\n ----SYSTEM SAVE MENU---- ");
@@ -14,12 +15,12 @@ public class Menu
         Console.WriteLine("[2] -- Reboot The System (will lower your system stability...)");
         Console.ResetColor();
         string? choice = Console.ReadLine();
-
+        int damageTaken = 0;
         if (choice == "1")
         {
-            Task.Delay(1000);
+            await Task.Delay(1000);
             Console.WriteLine("\nConnecting the Database..");
-            Task.Delay(500);
+            await Task.Delay(500);
             Console.WriteLine("\nPulling Logs....");
 
             var db = new DbManager();
@@ -37,15 +38,21 @@ public class Menu
         {
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("\nSystem Rebooting....");
-            Task.Delay(2000);
-            Console.WriteLine("\nSystem stability lower {number} point....");
+            await Task.Delay(2000);
+            Random rnd = new Random();
+            damageTaken = rnd.Next(2, 57);
+            Console.WriteLine($"\nSystem stability lower {damageTaken} point....");
             Console.ResetColor();
         }
         else
         {
             Console.WriteLine("\nInvalid input!!");
+            damageTaken = 5;
+            Console.WriteLine($"\nSystem stability lower {damageTaken} point....");
         }
         Console.WriteLine("\nTo Continue please press ENTER...");
         Console.ReadLine();
+
+        return damageTaken;
     }
 }

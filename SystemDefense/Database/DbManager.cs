@@ -80,7 +80,7 @@ public class DbManager
         Console.WriteLine("2000 Log Created....");
     }
 
-    public List<string> GetData(int limit = 5)
+    public List<string> GetData(int limit)
     {
         var datas = new List<string>();
 
