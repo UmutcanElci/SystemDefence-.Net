@@ -88,14 +88,21 @@ public class DbManager
         connection.Open();
 
         using var command = connection.CreateCommand();
-        command.CommandText = "SELECT FileName FROM SystemLogs WHERE FileName IS NOT NULL ORDER BY RANDOM() LIMIT $limit";
+        command.CommandText = "SELECT LogDate,Username,FileName,Details FROM SystemLogs WHERE FileName IS NOT NULL ORDER BY RANDOM() LIMIT $limit";
         command.Parameters.AddWithValue("$limit", limit);
 
         using var reader = command.ExecuteReader();
 
         while (reader.Read())
         {
-            datas.Add(reader.GetString(0));
+            string date = reader.IsDBNull(0) ? "UNKNOWN_TIME" : reader.GetString(0);
+            string user = reader.IsDBNull(1) ? "ANONYMOUS" : reader.GetString(1);
+            string file = reader.IsDBNull(2) ? "NO_FILE" : reader.GetString(2);
+            string details = reader.IsDBNull(3) ? "N/A" : reader.GetString(3);
+
+            string formattedLog = $"[{date}] USER: {user,-12} | TARGET: {file,-22} | INFO: {details}";
+
+            datas.Add(formattedLog);
         }
 
         return datas;
