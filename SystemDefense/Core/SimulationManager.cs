@@ -26,7 +26,7 @@ public class SimulationManager
         var rnd = new Random();
         while (SystemStability >= 0)
         {
-            Console.Clear();
+            //Console.Clear();
 
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"=== [SYSTEM STATUS] STABILITY: {SystemStability}% ===\n");

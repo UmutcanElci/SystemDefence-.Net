@@ -1,9 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="../Interfaces/Interfaces.csproj"/>
-    <ProjectReference Include="../Events/Events.csproj"/>
-    <ProjectReference Include="../Database/Database.csproj"/>
+    <ProjectReference Include="../Interfaces/Interfaces.csproj" />
+    <ProjectReference Include="../Events/Events.csproj" />
+    <ProjectReference Include="../Database/Database.csproj" />
+    <ProjectReference Include="..\Tools\Tools.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

@@ -18,3 +18,5 @@
 /home/umutcan/Work/SystemDefence-.Net/SystemDefense/Core/bin/Debug/net10.0/Events.pdb
 /home/umutcan/Work/SystemDefence-.Net/SystemDefense/Core/bin/Debug/net10.0/Database.dll
 /home/umutcan/Work/SystemDefence-.Net/SystemDefense/Core/bin/Debug/net10.0/Database.pdb
+/home/umutcan/Work/SystemDefence-.Net/SystemDefense/Core/bin/Debug/net10.0/Tools.dll
+/home/umutcan/Work/SystemDefence-.Net/SystemDefense/Core/bin/Debug/net10.0/Tools.pdb

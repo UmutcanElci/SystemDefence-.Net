@@ -1,4 +1,3 @@
-using System.Threading.Tasks;
 using Database;
 
 namespace Core;
@@ -27,10 +26,10 @@ public class Menu
 
             var logs = db.GetData(3);
 
-            Console.WriteLine("\nSuspicious Files :");
+            Console.WriteLine("\n -- STRING ARSENAL ANALYZE RESULTS -- ");
             foreach (var log in logs)
             {
-                Console.WriteLine($"- {log}");
+                Console.WriteLine(log.DisplayLog);
             }
 
         }

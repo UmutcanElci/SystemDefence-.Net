@@ -80,9 +80,9 @@ public class DbManager
         Console.WriteLine("2000 Log Created....");
     }
 
-    public List<string> GetData(int limit)
+    public List<(string DisplayLog, string RawFileName)> GetData(int limit)
     {
-        var datas = new List<string>();
+        var datas = new List<(string, string)>();
 
         using var connection = new SqliteConnection(connectionString);
         connection.Open();
@@ -102,7 +102,7 @@ public class DbManager
 
             string formattedLog = $"[{date}] USER: {user,-12} | TARGET: {file,-22} | INFO: {details}";
 
-            datas.Add(formattedLog);
+            datas.Add((formattedLog, file));
         }
 
         return datas;

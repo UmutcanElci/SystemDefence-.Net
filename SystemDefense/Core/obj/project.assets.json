@@ -207,6 +207,16 @@
         "runtime": {
           "bin/placeholder/Interfaces.dll": {}
         }
+      },
+      "Tools/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/Tools.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Tools.dll": {}
+        }
       }
     }
   },
@@ -350,13 +360,19 @@
       "type": "project",
       "path": "../Interfaces/Interfaces.csproj",
       "msbuildProject": "../Interfaces/Interfaces.csproj"
+    },
+    "Tools/1.0.0": {
+      "type": "project",
+      "path": "../Tools/Tools.csproj",
+      "msbuildProject": "../Tools/Tools.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
       "Database >= 1.0.0",
       "Events >= 1.0.0",
-      "Interfaces >= 1.0.0"
+      "Interfaces >= 1.0.0",
+      "Tools >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -392,6 +408,9 @@
             },
             "/home/umutcan/Work/SystemDefence-.Net/SystemDefense/Interfaces/Interfaces.csproj": {
               "projectPath": "/home/umutcan/Work/SystemDefence-.Net/SystemDefense/Interfaces/Interfaces.csproj"
+            },
+            "/home/umutcan/Work/SystemDefence-.Net/SystemDefense/Tools/Tools.csproj": {
+              "projectPath": "/home/umutcan/Work/SystemDefence-.Net/SystemDefense/Tools/Tools.csproj"
             }
           }
         }

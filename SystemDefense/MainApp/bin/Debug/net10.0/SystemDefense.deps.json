@@ -191,7 +191,8 @@
         "dependencies": {
           "Database": "1.0.0",
           "Events": "1.0.0",
-          "Interfaces": "1.0.0"
+          "Interfaces": "1.0.0",
+          "Tools": "1.0.0"
         },
         "runtime": {
           "Core.dll": {

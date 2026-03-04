@@ -10,7 +10,8 @@
         "dependencies": {
           "Database": "1.0.0",
           "Events": "1.0.0",
-          "Interfaces": "1.0.0"
+          "Interfaces": "1.0.0",
+          "Tools": "1.0.0"
         },
         "runtime": {
           "Core.dll": {}
@@ -213,6 +214,14 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "Tools/1.0.0": {
+        "runtime": {
+          "Tools.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -275,6 +284,11 @@
       "sha512": ""
     },
     "Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Tools/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
