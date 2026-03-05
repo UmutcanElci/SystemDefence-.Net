@@ -5,6 +5,7 @@ namespace Core;
 
 public class Menu
 {
+    private readonly SystemAnalyzer _systemAnalyzer = new();
 
     public async Task<int> ShowOptions()
     {
@@ -26,12 +27,7 @@ public class Menu
 
             var logs = db.GetData(3);
 
-            Console.WriteLine("\n -- STRING ARSENAL ANALYZE RESULTS -- ");
-            foreach (var log in logs)
-            {
-                Console.WriteLine(log.DisplayLog);
-            }
-
+            await _systemAnalyzer.AnalyzeLogsAsync((logs));
         }
         else if (choice == "2")
         {
