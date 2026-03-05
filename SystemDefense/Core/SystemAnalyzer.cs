@@ -6,10 +6,9 @@ namespace Core;
 public class SystemAnalyzer
 {
     private readonly StringArsenal _stringArsenal = new();
-
+    private Random rnd = new();
     private (string CorrectTool, string MissionText) MissionSelector()
     {
-        Random rnd = new Random();
 
         int mission = rnd.Next(1, 4);
 
@@ -27,11 +26,12 @@ public class SystemAnalyzer
     {
         var currentMission = MissionSelector();
 
-        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine("\nChoose the right Tool...");
         Console.WriteLine($"\n{currentMission.MissionText}");
         Console.ResetColor();
 
-        Console.ForegroundColor = ConsoleColor.DarkCyan;
+        Console.ForegroundColor = ConsoleColor.DarkBlue;
         Console.WriteLine("\n[1] -- Open StringArsenal (Tools for Fixing Suspicious Files)");
         Console.WriteLine("[2] -- Cancel Analyzing and Reboot the System...");
         Console.ResetColor();
@@ -49,7 +49,7 @@ public class SystemAnalyzer
             Console.WriteLine("Which tool do you want to use? (1/2/3): ");
             Console.ResetColor();
 
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.ForegroundColor = ConsoleColor.White;
             string? toolChoice = Console.ReadLine();
 
             if (toolChoice == currentMission.CorrectTool)
@@ -60,7 +60,7 @@ public class SystemAnalyzer
                     {
                         string ext = _stringArsenal.FindExtension(log.RawFileName);
                         string extDisplay = string.IsNullOrEmpty(ext) ? "NONE (HIDDEN!!)" : ext;
-                        Console.WriteLine($"\nFile : {log.RawFileName,-20} | Extension : {extDisplay}");
+                        Console.WriteLine($"\nFile : {log.RawFileName,-20} --> Extension : {extDisplay}");
                         await Task.Delay(400);
                     }
                     return 0;
@@ -87,9 +87,6 @@ public class SystemAnalyzer
 
                         string visualStream = combinedReport.Replace("\n", " ][ ").Replace("\r", "");
 
-                        Console.ForegroundColor = ConsoleColor.DarkGray;
-                        Console.WriteLine("\n[RAW DATA PAYLOAD]");
-
                         Console.ForegroundColor = ConsoleColor.DarkGreen;
                         Console.WriteLine($"[START] {visualStream} [END]\n");
                         Console.ResetColor();
@@ -114,7 +111,7 @@ public class SystemAnalyzer
                     Console.WriteLine("The attack succeeded while you were trying to use the wrong equipment...");
                     Console.ResetColor();
 
-                    return Random.Shared.Next(15, 30);
+                    return rnd.Next(15, 30);
                 }
 
                 else
@@ -131,7 +128,7 @@ public class SystemAnalyzer
                 Console.ForegroundColor = ConsoleColor.DarkYellow;
                 Console.WriteLine("\nRebooting the system and ignoring the logs...");
                 Console.ResetColor();
-                return Random.Shared.Next(30, 57);
+                return rnd.Next(30, 57);
             }
             else
             {
@@ -146,7 +143,7 @@ public class SystemAnalyzer
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("\nRebooting the system and ignoring the logs...");
             Console.ResetColor();
-            return Random.Shared.Next(30, 57);
+            return rnd.Next(30, 57);
         }
     }
 }

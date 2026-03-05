@@ -27,14 +27,20 @@ public class Menu
 
             var logs = db.GetData(3);
 
-            await _systemAnalyzer.AnalyzeLogsAsync((logs));
+            damageTaken = await _systemAnalyzer.AnalyzeLogsAsync((logs));
+            if (damageTaken > 0)
+            {
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
+                Console.WriteLine($"\nSystem stability lower {damageTaken} point....");
+                Console.ResetColor();
+            }
         }
         else if (choice == "2")
         {
+            Random rnd = new Random();
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("\nSystem Rebooting....");
             await Task.Delay(2000);
-            Random rnd = new Random();
             damageTaken = rnd.Next(2, 57);
             Console.WriteLine($"\nSystem stability lower {damageTaken} point....");
             Console.ResetColor();
